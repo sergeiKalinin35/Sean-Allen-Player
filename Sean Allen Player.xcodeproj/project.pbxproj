@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F46A7FAC26FCB9BA002D38CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A7FAB26FCB9BA002D38CB /* AppDelegate.swift */; };
 		F46A7FAE26FCB9BA002D38CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A7FAD26FCB9BA002D38CB /* SceneDelegate.swift */; };
-		F46A7FB026FCB9BA002D38CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A7FAF26FCB9BA002D38CB /* ViewController.swift */; };
 		F46A7FB326FCB9BA002D38CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46A7FB126FCB9BA002D38CB /* Main.storyboard */; };
 		F46A7FB526FCB9BC002D38CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46A7FB426FCB9BC002D38CB /* Assets.xcassets */; };
 		F46A7FB826FCB9BC002D38CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46A7FB626FCB9BC002D38CB /* LaunchScreen.storyboard */; };
+		F46A7FC326FCC2AB002D38CB /* GenreButtonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A7FC226FCC2AB002D38CB /* GenreButtonScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F46A7FA826FCB9BA002D38CB /* Sean Allen Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sean Allen Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46A7FAB26FCB9BA002D38CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46A7FAD26FCB9BA002D38CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F46A7FAF26FCB9BA002D38CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F46A7FB226FCB9BA002D38CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F46A7FB426FCB9BC002D38CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46A7FB726FCB9BC002D38CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46A7FB926FCB9BC002D38CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46A7FC226FCC2AB002D38CB /* GenreButtonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		F46A7FAA26FCB9BA002D38CB /* Sean Allen Player */ = {
 			isa = PBXGroup;
 			children = (
-				F46A7FAB26FCB9BA002D38CB /* AppDelegate.swift */,
-				F46A7FAD26FCB9BA002D38CB /* SceneDelegate.swift */,
-				F46A7FAF26FCB9BA002D38CB /* ViewController.swift */,
-				F46A7FB126FCB9BA002D38CB /* Main.storyboard */,
-				F46A7FB426FCB9BC002D38CB /* Assets.xcassets */,
-				F46A7FB626FCB9BC002D38CB /* LaunchScreen.storyboard */,
+				F46A7FC126FCC251002D38CB /* VC */,
+				F46A7FC026FCC22B002D38CB /* Storyoard */,
+				F46A7FBF26FCC206002D38CB /* Service */,
 				F46A7FB926FCB9BC002D38CB /* Info.plist */,
 			);
 			path = "Sean Allen Player";
+			sourceTree = "<group>";
+		};
+		F46A7FBF26FCC206002D38CB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F46A7FAD26FCB9BA002D38CB /* SceneDelegate.swift */,
+				F46A7FAB26FCB9BA002D38CB /* AppDelegate.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F46A7FC026FCC22B002D38CB /* Storyoard */ = {
+			isa = PBXGroup;
+			children = (
+				F46A7FB126FCB9BA002D38CB /* Main.storyboard */,
+				F46A7FB626FCB9BC002D38CB /* LaunchScreen.storyboard */,
+				F46A7FB426FCB9BC002D38CB /* Assets.xcassets */,
+			);
+			path = Storyoard;
+			sourceTree = "<group>";
+		};
+		F46A7FC126FCC251002D38CB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F46A7FC226FCC2AB002D38CB /* GenreButtonScreen.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F46A7FB026FCB9BA002D38CB /* ViewController.swift in Sources */,
 				F46A7FAC26FCB9BA002D38CB /* AppDelegate.swift in Sources */,
 				F46A7FAE26FCB9BA002D38CB /* SceneDelegate.swift in Sources */,
+				F46A7FC326FCC2AB002D38CB /* GenreButtonScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "S.K.A..Sean-Allen-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "S.K.A..Sean-Allen-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
